@@ -20,8 +20,8 @@ from matplotlib import rc
 if __name__=="__main__":
 
     #======== loading cosmological data
-    filename = 'hz_cc_sdss.dat'
-    (Z,Hz,Sigma,hid) = loadtxt(filename,unpack='True')
+    filename = 'hz_cc_sdss'
+    (Z,Hz,Sigma,hid) = loadtxt(filename+'.dat',unpack='True')
 
     #======== Gaussian process: reconstructing H(z) from data, starting from zmin = 0 all the way to zmax from data 
     zmin = 0.
